@@ -1,0 +1,213 @@
+.testimonials {
+    margin-top: 50px;
+    width: 100%;
+    height: calc(420px + (564 - 420) * ((100vw - 1366px) / (1920 - 1366)));
+    position: relative;
+}
+
+.testimonials__about {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonials__title {
+    width: 250px;
+    padding: 88px 27px 27px;
+    color: var(--Primary-Accent-1, #1E232B);
+    font-feature-settings: 'ss01' on;
+
+    /* Heading/Subtle/H5 */
+    font-family: var(--Body-font-family, "Be Vietnam Pro");
+    font-size: var(--Heading-font-size-H5, 42px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98%;
+    /* 41.16px */
+    letter-spacing: -2.1px;
+}
+
+.testimonials__icon {
+    padding-left: 24px;
+}
+
+.testimonials__icon button {
+    background-color: var(--btn-pre);
+    width: 36px;
+    border-radius: 50%;
+    height: 36px;
+    padding: 0;
+}
+
+.testimonials__icon button:nth-child(2) {
+    margin-left: 4px;
+}
+
+.testimonials__icon button img {
+    padding: 6px;
+}
+
+.testimonials__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translate(143%, 74.5%);
+    width: 475px;
+    padding: 33px 0px 34px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 13px;
+    border-radius: 20px;
+    background: var(--Layer, #F6F6F6);
+}
+
+.testimonials__text--desc {
+    display: -webkit-box;
+    width: 455px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    color: var(--Text, #1E1E1E);
+    text-overflow: ellipsis;
+
+    /* Body/Strong/XXL */
+    font-family: var(--Body-font-family, "Be Vietnam Pro");
+    font-size: var(--Body-font-size-body-2xL, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+    /* 21px */
+    letter-spacing: -0.2px;
+}
+
+.testimonials__text--name {
+    color: var(--Text, #1E1E1E);
+    font-feature-settings: 'ss01' on;
+    opacity: 0.8;
+    /* Body/Strong/L */
+    font-family: var(--Body-font-family, "Be Vietnam Pro");
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    /* 22.1px */
+    letter-spacing: -0.34px;
+}
+
+.testimonials__user {
+    position: absolute;
+}
+
+.about__user--1 {
+    top: 139%;
+    left: 200%;
+}
+
+.about__user--2 {
+    top: 83%;
+    left: 134%;
+}
+
+.about__user--3 {
+    top: 145%;
+    left: 40%;
+}
+
+.about__user--4 {
+    top: 193%;
+    left: 125%;
+}
+
+.about__user--5 {
+    top: 173%;
+    left: 311%;
+}
+
+.about__user--6 {
+    top: 173%;
+    left: 419%;
+}
+
+.about__user--7 {
+    top: 109%;
+    left: 464%;
+}
+
+.testimonials__wrapper {
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        border-radius: 82px;
+        background: rgba(19, 90, 178, 0.50);
+        filter: blur(32px);
+        width: 164px;
+        height: 164px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        display: none;
+    }
+
+    &.selected::before {
+        display: block;
+    }
+}
+
+.testimonial__img {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.img__about--1 {
+    width: 123px;
+    height: 123px;
+    background: url(../../assets/355442552_917728419299779_2129254489772126729_n\ 1.png) lightgray 50% / cover no-repeat;
+}
+
+.img__about--2 {
+    width: 93px;
+    height: 93px;
+    background: url(../../assets/dae9a5d01a03b1f74c1c605ccb2c8296.jfif) lightgray 50% / cover no-repeat;
+}
+
+.img__about--3 {
+    width: 64px;
+    height: 64px;
+    background: url(../../assets/d00d36f6c5e17095cb9e2c430b7789f5.jfif) lightgray 50% / cover no-repeat;
+}
+
+.img__about--4 {
+    width: 83px;
+    height: 83px;
+    background: url(../../assets/9149fe6891ebfbc4715446951dcfbd8d.jfif) lightgray 50% / cover no-repeat;
+}
+
+.img__about--5 {
+    width: 66.5px;
+    height: 66.5px;
+    background: url(../../assets/5cb1719c0589b75ce92050318e994e71.png) lightgray 50% / cover no-repeat;
+}
+
+.img__about--6 {
+    width: 115px;
+    height: 115px;
+    background: url(../../assets/f5df8626833562fceb687d14b6e49540.jfif) lightgray 50% / cover no-repeat;
+}
+
+.img__about--7 {
+    width: 70px;
+    height: 70px;
+    background: url(../../assets/79757f9a36157aaca91784ee325a1184.jfif) lightgray 50% / cover no-repeat;
+}

@@ -1,0 +1,113 @@
+.magsafe {
+    margin-top: 120px;
+    background-color: var(--service-bg);
+    width: 100%;
+    flex-shrink: 0;
+    padding-bottom: 88px;
+}
+
+.magsafe__extreme {
+    padding-top: 83px;
+}
+
+.magsafe__title {
+    width: clamp(365px, calc(465px + (484 - 450) * ((100vw - 1366px) / (1920 - 1366))), 500px);
+    color: var(--Text);
+    font-feature-settings: 'ss01' on;
+    font-family: var(--Body-font-family);
+    font-size: clamp(2rem, 3vw, var(--Heading-font-size-H4));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -3.4px;
+}
+
+.magsafe__border {
+    margin-top: 38px;
+    border-top: 1.4px solid var(--border);
+}
+
+// ========================================
+
+.magsafe__content {
+    margin-top: 51px;
+}
+
+.splide {
+    visibility: visible !important;
+}
+
+.splide__list {
+    column-gap: 27px;
+}
+
+.splide__slide {
+    width: 32.2%;
+}
+
+.magsafe__slider--item {
+    position: relative;
+}
+
+.magsafe__slider--img {
+    width: 100%;
+    height: 479px;
+    flex-shrink: 0;
+}
+
+.magsafe__img--1 {
+    background: url(../../assets/image\ 67.png) var(--service-bg) 55px 48px / 78.32% 83.716% no-repeat;
+}
+
+.magsafe__img--2 {
+    height: 577px;
+    border-radius: 10px;
+    background: url(../../assets/image\ 121.png) var(--service-bg) 50% / cover no-repeat;
+    background-size: 208% 140%;
+    background-position: 63% 44%;
+}
+
+.magsafe__img--3 {
+    background: url(../../assets/image\ 68.png) var(--service-bg) 55px 48px / 78.32% 83.716% no-repeat;
+}
+
+.magsafe__slider--title {
+    width: 260px;
+    padding: 23px 32px;
+    color: var(--Text, #1E1E1E);
+    font-family: var(--Body-font-family);
+    font-size: var(--Body-font-size-body-2xL, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+    letter-spacing: -0.2px;
+}
+
+.magsafe__text {
+    color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+.magsafe__slider--number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    color: var(--Text, #1E1E1E);
+    font-feature-settings: 'ss01' on;
+
+    font-family: var(--Body-font-family, "Be Vietnam Pro");
+    font-size: var(--Body-font-size-body-Md, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 22.4px */
+    letter-spacing: -0.16px;
+}
+
+.color__number {
+    color: var(--white-color);
+    opacity: 0.5;
+}

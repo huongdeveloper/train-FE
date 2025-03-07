@@ -1,0 +1,115 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    // background-color: rgba(0, 0, 0, 0.02);
+    width: 100%;
+    height: 114px;
+    flex-shrink: 0;
+    z-index: 99999;
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(112, 162, 255, 0.6);
+}
+
+.heder__home {
+    display: flex;
+    position: relative;
+}
+
+.heder__logo img {
+    padding: 46px 55px 40px;
+    width: 160px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+// ====================================
+.heder__nav {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 817px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 54px;
+    background: var(--white-color);
+    display: flex;
+    gap: 180px;
+}
+
+.header__nav--list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 59%;
+    height: 100%;
+    padding-left: 32px;
+}
+
+li a {
+    color: #000;
+    font-feature-settings: 'ss01' on;
+    font-family: var(--Body-font-family);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 25px 10px;
+    /* 133.333% */
+}
+
+// ====================================
+.header__nav--icon {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    width: 12%;
+    height: 100%;
+}
+
+.nav__icon {
+    padding: 18px 6px;
+    position: relative;
+}
+
+.bar__mobi img,
+.nav__icon img {
+    width: 18px;
+    height: 26px;
+}
+
+.nav__icon p {
+    position: absolute;
+    right: -1px;
+    bottom: 16.5px;
+    border-radius: 16px;
+    background: #0F61FF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    width: 10px;
+    height: 10px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--white-color);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'ss01' on;
+    font-family: var(--Body-font-familys);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 10px;
+    /* 100% */
+    letter-spacing: -0.1px;
+}
+
+.bar__mobi {
+    display: none;
+}

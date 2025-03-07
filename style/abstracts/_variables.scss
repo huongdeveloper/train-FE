@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --heading-font: "Lora", serif;
+  --Body-font-family: "Be Vietnam Pro";
+  --Text: #1E1E1E;
+  --white-color: #fff;
+  --contact-bg: #F7F7F8;
+  --service-bg: #F6F6F6;
+  --btn-pre: #e8e8e8;
+  --Primary-Accent-1: #1E232B;
+  --page-width: 1592px;
+  --Body-font-size-latop-lv: 10px;
+  --Body-font-size-latop-wt: 10.6px;
+  --Body-font-size-ltop-MZ: 11px;
+  --Body-font-size-latop-ts: 11.5px;
+  --Body-font-size-laptop-Md: 12px;
+  --Body-font-size-body-xS: 14px;
+  --Body-font-size-laptop-2xL: 14.5px;
+  --Body-font-size-body-Sm: 15px;
+  --Body-font-size-body-Md: 16px;
+  --Body-font-size-body-1xl: 18px;
+  --Body-font-size-body-2xL: 20px;
+  --Heading-font-size-L: 22px;
+  --Heading-font-size-ltop-2xl: 28px;
+  --Body-font-size-ltop-3xL: 30px;
+  --Heading-font-size-ltop-3xxl: 31px;
+  --Heading-font-size-ltop-xxl: 36px;
+  --Heading-laptop-font-size-H4: 37px;
+  --Heading-font-size-H4: 50px;
+  --Heading-font-size-H3: 60px;
+  --Heading-font-size-HL: 40px;
+  --Heading-font-size-H5: 42px;
+  --Heading-font-size-H6: 31px;
+  --Heading-font-size-H5-mobi: 32px;
+  --grid-desktop-vertical-spacing: 30px;
+  --grid-desktop-horizontal-spacing: 30px;
+  --grid-desktop-collection-grid: 26px;
+  --grid-desktop-col-list-grid: 28px;
+  --grid-desktop-collection: 28px;
+  --grid-laptop-vertical-spacing: 25px;
+  --grid-laptop-horizontal-spacing: 25px;
+  --grid-laptop-spacing-cl: 20px;
+  --grid-laptop-spacing: 18px;
+  --grid-laptop-spacing-cls: 19px;
+  --grid-laptop-spacing-cls-cl: 19px;
+  --Button-Primary-BG: #0F61FF;
+  --Button-Primary-HV: #6094fc;
+  --Primary-Accent-1: #1E232B;
+  --border: rgba(0, 0, 0, 0.10);
+  --grid: 12;
+  --grid-container-width: 1920px;
+  --grid-container-gap: 0px;
+  --grid-col-gap-vertical: 30px;
+  --grid-col-gap-horizontal: 30px;
+  --col-xs: 2.82;
+  --col-lg: 2.8;
+  --col-wt: 12;
+  --col-ltop: 12;
+  --col-sm: 5.8;
+  --col-mobi: 5.8;
+  --new: #054e4a;
+  --selling-fast: #000000;
+  --coupon: #a42003;
+  --sale-bg: #6e331a;
+
+
+
+  --contact-border: #e6e6e6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  cursor: text;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.ml-35 {
+  margin-left: 35px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--Secondary-Inverse-Title, #FFF);
+}
+
+.page-width {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  column-gap: var(--grid-desktop-horizontal-spacing);
+  row-gap: var(--grid-desktop-vertical-spacing);
+}
+
+.btn {
+  border-radius: 56px;
+  background: var(--Button-Primary-BG);
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--Button-Primary-HV);
+}
+
+@media (max-width: 768px) {
+  .page-width {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+}

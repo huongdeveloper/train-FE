@@ -1,0 +1,38 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    height: 1004px;
+    max-height: 100vh;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), url(../../assets/image\ 49.png) lightgray 0px 2.966px / 100% 110.591% no-repeat;
+}
+
+.hero__heading {
+    position: absolute;
+    bottom: 125px;
+    left: 49.5%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    max-width: 1843px;
+    height: 114px;
+    max-height: 15vh;
+
+}
+
+.hero__heading h1 {
+    color: var(--white-color);
+    text-align: center;
+    font-feature-settings: 'ss01' on;
+    font-family: var(--Body-font-family);
+    font-size: clamp(2rem, 11.2vw, 213px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 114px;
+    letter-spacing: -17.04px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.6/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.6/dist/js/splide.min.js"></script>
+
+    <script>
+        function load(selector, path) {
+            const cached = localStorage.getItem(path);
+            if (cached) {
+                document.querySelector(selector).innerHTML = cached;
+                window.dispatchEvent(new Event("template-loaded")); // Khởi tạo luôn
+            }
+            fetch(path)
+                .then((res) => res.text())
+                .then((html) => {
+                    if (html !== cached) {
+                        document.querySelector(selector).innerHTML = html;
+                        localStorage.setItem(path, html);
+                    }
+                    window.dispatchEvent(new Event("template-loaded"));
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <header class="header">
+            <script>
+                load(".header", "sections/header.html");
+            </script>
+        </header>
+        <section class="hero">
+            <script>
+                load(".hero", "sections/hero.html");
+            </script>
+        </section>
+        <section class="product">
+            <script>
+                load(".product", "sections/product-tabs.html");
+            </script>
+        </section>
+        <section class="magsafe">
+            <script>
+                load(".magsafe", "sections/magsafe-extreme.html");
+            </script>
+        </section>
+        <section class="selfie">
+            <script>
+                load(".selfie", "sections/selfie-phone.html");
+            </script>
+        </section>
+        <section class="collection page-width">
+            <script>
+                load(".collection", "sections/featured-collection.html");
+            </script>
+        </section>
+        <section class="testimonials page-width">
+            <script>
+                load(".testimonials", "sections/testimonials.html");
+            </script>
+        </section>
+        <section class="collection__list page-width">
+            <script>
+                load(".collection__list", "sections/collection-list.html");
+            </script>
+        </section>
+        <section class="footer">
+            <script>
+                load(".footer", "sections/footer.html");
+            </script>
+        </section>
+    </section>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/color.js"></script>
+    <script src="scripts/testimonial-user.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.magsafe__slider', {
+                type: 'slide',
+                gap: '5px',
+                pagination: false,
+                arrows: false,
+                drag: true,
+                swipe: true,
+                perPage: 3,
+                breakpoints: {
+                    768: {
+                        perPage: 1,
+                        drag: true,
+                        pagination: true
+                    },
+                },
+            }).mount();
+        });
+    </script>
+</body>
+
+</html>
